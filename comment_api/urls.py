@@ -4,7 +4,7 @@ from rest_framework.documentation import include_docs_urls
 from .views import CommentView
 
 router = DefaultRouter()
-router.register('comment',CommentView)
+router.register('comments',CommentView)
 
 urlpatterns = [
 	url('^', include(router.urls)),
